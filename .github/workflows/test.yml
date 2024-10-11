@@ -1,0 +1,9 @@
+name: Automated tests
+on: push
+jobs:
+  test:
+    name: Test Variables
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${{ github.event.repository.name}}"
+      - run: echo "${{ github.event.repository.default_branch}}"
